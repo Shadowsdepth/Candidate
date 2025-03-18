@@ -10,11 +10,11 @@ It goes through 30 candidates before you have to reload the page to get another 
 ## Installation
 
 npm i -y
-npm run dev
+
 
 ## Usage
 
-Refer to description
+npm run start
 
 ## Credits
 
