@@ -43,3 +43,7 @@ N/A
 Try adding, skipping, and removing potential candidates
 After 30 candidates you will run out and a message will appear, reload the page for 30 more candidates
 You can view you potential candidates by hitting the Favorites button at the top of the page
+## ScreenShot's
+
+![image](https://github.com/user-attachments/assets/76ec2397-bc0e-4e2e-a800-8804207bcea5)
+![image](https://github.com/user-attachments/assets/8465a07d-60e8-48d6-aaf9-3c3d9f4e9458)
