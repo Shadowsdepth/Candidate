@@ -1,33 +1,45 @@
-# React + TypeScript + Vite
+# <Candidate-Search>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Description
 
-Currently, two official plugins are available:
+This application allows you to look for potential candidates and add them to local storage.
+You can view the local storage using the Nav bar at the top of the page and remove potential candidates from the list of saved candidates.
+You can either add them to that list or else skip the candidate to move to the next one.
+It goes through 30 candidates before you have to reload the page to get another 30 options.
 
-* [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md), which uses [Babel](https://babeljs.io/) for Fast Refresh
-* [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc), which uses [SWC](https://swc.rs/) for Fast Refresh
+## Installation
 
-## Expanding the ESLint configuration
+npm i -y
+npm run dev
 
-If you're developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Usage
 
-* Configure the top-level `parserOptions` property as follows:
+Refer to description
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+## Credits
 
-* Replace `plugin:@typescript-eslint/recommended` with `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`.
-* Optionally, add `plugin:@typescript-eslint/stylistic-type-checked`.
-* Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` and `plugin:react/jsx-runtime` to the `extends` list.
+N/A
 
----
-© 2024 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
+## License
+
+N/A
+
+## Badges
+
+![badmath](https://img.shields.io/github/languages/top/lernantino/badmath)
+
+## Features
+
+- Skip Candidates
+- Add Candidates
+- Remove Candidates
+
+## How to Contribute
+
+N/A
+
+## Tests
+
+Try adding, skipping, and removing potential candidates
+After 30 candidates you will run out and a message will appear, reload the page for 30 more candidates
+You can view you potential candidates by hitting the Favorites button at the top of the page

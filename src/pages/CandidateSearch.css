@@ -1,0 +1,78 @@
+/* Styling the buttons */
+button {
+  background-color: #3B82F6; /* Blue background to match theme */
+  color: white; /* White text */
+  border: none;
+  padding: 12px 24px; /* More padding for a button-like look */
+  border-radius: 8px; /* Rounded corners */
+  font-size: 16px; /* Larger font size */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effects */
+  margin: 10px 5px; /* Space between buttons */
+}
+
+/* Hover effect for the buttons */
+button:hover {
+  background-color: #2563EB; /* Darker blue on hover */
+  transform: translateY(-2px); /* Slight lift on hover for a more interactive feel */
+}
+
+/* Focus effect for accessibility */
+button:focus {
+  outline: 3px solid #4CAF50; /* Green outline for focus visibility */
+  outline-offset: 4px;
+}
+
+/* Disabled state for buttons (if needed) */
+button:disabled {
+  background-color: #E0E0E0; /* Light grey background */
+  color: #A0A0A0; /* Greyed-out text */
+  cursor: not-allowed; /* Disabled cursor */
+  transform: none; /* No transform on disabled button */
+}
+
+/* Styling for the container of buttons */
+button + button {
+  margin-left: 10px; /* Space between the Save and Skip buttons */
+}
+
+/* Styling the candidate information */
+.candidate-info {
+  border: 2px solid #3B82F6; /* Blue border around the box */
+  padding: 20px; /* Add some space inside the box */
+  margin-bottom: 20px; /* Space between candidate boxes */
+  border-radius: 10px; /* Rounded corners */
+  background-color: #0a396e; /* Blue background color */
+  color: white; /* White text color */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for better separation */
+  max-width: 400px; /* Set a max width for the box */
+  margin-left: auto;
+  margin-right: auto; /* Center the box horizontally */
+}
+
+/* Styling the profile picture (avatar) inside the box */
+.candidate-info img {
+  width: 120px; /* Set width */
+  height: 120px; /* Set height */
+  border-radius: 50%; /* Make the avatar round */
+  margin-bottom: 15px; /* Space below the image */
+  display: block;
+  margin-left: auto;
+  margin-right: auto; /* Center the image */
+}
+
+/* Styling for each paragraph inside the box */
+.candidate-info p {
+  margin: 10px 0; /* Space between paragraphs */
+  font-size: 16px; /* Font size for text */
+}
+
+/* Styling the links inside the box */
+.candidate-info a {
+  color: #3B82F6; /* Blue color for links */
+  text-decoration: none; /* Remove underline from links */
+}
+
+.candidate-info a:hover {
+  text-decoration: underline; /* Add underline on hover */
+}

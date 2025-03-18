@@ -1,0 +1,87 @@
+/* SavedCandidates.css */
+
+/* Center the h1 element */
+h1 {
+  text-align: center; /* Center the heading text */
+  margin-bottom: 20px; /* Optional: add some margin below the heading */
+}
+
+
+/* Styling the container for the saved candidates */
+div.saved-candidates-container {
+  display: flex;
+  flex-wrap: wrap; /* Allows items to wrap onto the next row */
+  gap: 20px; /* Adds space between each candidate card */
+  justify-content: space-evenly; /* Distributes items evenly across the container */
+  margin: 20px;
+}
+
+/* Styling each candidate card */
+.candidate-card {
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  background-color: #0a396e; /* Blue background for candidate cards */
+  width: calc(33% - 20px); /* Each card takes up 1/3 of the container, accounting for gap */
+  box-sizing: border-box; /* Ensures padding is included in width calculation */
+  color: white; /* White text color */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Adds subtle shadow around the cards */
+  transition: transform 0.3s ease; /* Smooth scale transition */
+  text-align: center; /* Centers text inside the card */
+}
+
+/* Hover effect for the candidate card */
+.candidate-card:hover {
+  transform: scale(1.05); /* Slightly scales up the card on hover */
+}
+
+/* Styling the avatar image */
+.candidate-card img {
+  border-radius: 50%;
+  margin-bottom: 10px;
+  width: 100px; /* Set consistent image size */
+  height: 100px;
+  object-fit: cover; /* Ensures image fits within its container */
+}
+
+/* Styling the candidate name and username */
+.candidate-card h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #fff;
+  font-weight: bold;
+}
+
+/* Styling the button inside each card */
+.candidate-card button {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  margin-top: 10px;
+}
+
+/* Hover effect for the button */
+.candidate-card button:hover {
+  background-color: #e60000;
+  transform: translateY(-2px); /* Lift the button slightly on hover */
+}
+
+/* Mobile Responsiveness: Stack the cards on smaller screens */
+@media (max-width: 768px) {
+  .candidate-card {
+      width: calc(50% - 20px); /* 2 cards per row on smaller screens */
+  }
+}
+
+/* Mobile Responsiveness: Stack the cards on very small screens */
+@media (max-width: 480px) {
+  .candidate-card {
+      width: 100%; /* 1 card per row on very small screens */
+  }
+}

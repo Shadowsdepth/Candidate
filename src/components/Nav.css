@@ -1,0 +1,65 @@
+/* Nav.css */
+
+/* Basic styling for the navbar */
+.navbar {
+    background: linear-gradient(135deg, #1E3A8A, #3B82F6); /* Blue gradient background */
+    padding: 15px 30px; /* Increased padding for more space */
+    display: flex;
+    justify-content: center; /* Center the navbar items */
+    align-items: center;
+    border-bottom: 3px solid #3B82F6; /* Light blue border at the bottom */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+}
+
+.nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Flexbox for horizontal layout */
+}
+
+.nav-links li {
+    margin-right: 25px; /* Space between list items */
+}
+
+.nav-link {
+    text-decoration: none;
+    color: white; /* White text color */
+    font-size: 18px; /* Slightly larger text */
+    font-weight: bold; /* Bold text for prominence */
+    padding: 10px 20px; /* Padding for a button-like effect */
+    border-radius: 8px; /* Rounded corners */
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+}
+
+/* Hover and active states */
+.nav-link:hover {
+    background-color: #2563EB; /* Darker blue on hover */
+    color: white; /* Keep the text white */
+    transform: scale(1.05); /* Slightly enlarge the link on hover */
+}
+
+.nav-link:focus {
+    outline: 3px solid #3B82F6; /* Blue outline on focus for accessibility */
+    outline-offset: 4px;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 10px 20px; /* Reduced padding for mobile */
+    }
+
+    .nav-links {
+        flex-direction: column; /* Stack links vertically on smaller screens */
+        align-items: center;
+    }
+
+    .nav-links li {
+        margin: 10px 0; /* Add margin between stacked links */
+    }
+
+    .nav-link {
+        font-size: 16px; /* Slightly smaller text on mobile */
+    }
+}
